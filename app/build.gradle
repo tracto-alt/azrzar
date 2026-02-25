@@ -28,26 +28,9 @@ android {
 }
 
 dependencies {
-    // UI
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
-    
-    // Serveur HTTP
     implementation 'org.nanohttpd:nanohttpd:2.3.1'
-    
-    // android-smsmms lib pour MMS automatique
     implementation 'com.klinkerapps:android-smsmms:5.2.6'
-    
-    // Support
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
-```
-
----
-
-## 📂 **Résumé - 2 fichiers différents :**
-```
-ton-repo/
-├── build.gradle           ← Celui-ci doit avoir "version '8.1.0' apply false"
-└── app/
-    └── build.gradle       ← Celui-ci doit avoir "namespace 'com.smsgateway.pro'"
