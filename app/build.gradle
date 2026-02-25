@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace 'com.smsgateway.pro'
     compileSdk 33
     
     defaultConfig {
@@ -40,3 +41,13 @@ dependencies {
     // Support
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
+```
+
+---
+
+## 📂 **Résumé - 2 fichiers différents :**
+```
+ton-repo/
+├── build.gradle           ← Celui-ci doit avoir "version '8.1.0' apply false"
+└── app/
+    └── build.gradle       ← Celui-ci doit avoir "namespace 'com.smsgateway.pro'"
